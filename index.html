@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Search for parks in your state</h1>
+    </header>
+    <main>
+        <form class="form">
+            <label for="state-lookup">State Name</label>
+            <input type="text" name="state-lookup" class="state" id="user-input">
+            <br>
+            <label for="number-of-parks">Number of parks you wanna see</label>
+            <input type="number" name="number-of-parks" class="num" id="user-num-input" value="10">
+
+            <input type="submit" class="submit-btn">
+        </form>
+
+        <p class="js-error"></p>
+
+        <section class="display-section hidden">
+            <h2>Parks by you</h2>
+            <ul class="results-list"> 
+            </ul>
+        </section>
+    </main>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
